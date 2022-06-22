@@ -6,9 +6,11 @@ export default function BeanieBaby({ id, title, image }) {
     // particular beanie baby.
     // it should also render the beanie baby's image and show the beanie baby's name
     <div className='beanie-baby'>
-      <Link key={title + id} to={`/beanie/${id}`} />
-      <h2>{title}</h2>
-      <img className='beanie-img' src={image} />
+      <Link key={title + id} to={`/beanie/${id}`}>
+
+        <h2>{title}</h2>
+        <img className='beanie-img' src={image} />
+      </Link>
     </div>
   );
 }
